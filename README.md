@@ -1,2 +1,2 @@
 # gaming-event
-Glasgow Clyde College Computing Project  Promote an Event
+Glasgow Clyde College Computing Project "Promote an Event"
