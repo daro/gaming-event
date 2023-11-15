@@ -1,4 +1,4 @@
-// Avoid `console` errors in browsers that lack a console.
+
 (function() {
   var method;
   var noop = function () {};
@@ -10,6 +10,10 @@
   ];
   var length = methods.length;
   var console = (window.console = window.console || {});
+
+
+
+
 
   while (length--) {
     method = methods[length];
