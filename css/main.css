@@ -345,7 +345,6 @@ body {
 }
 
 main {
-  background-color: #fff;
   display: flex;
   padding: 0;
   min-height: 80vh;
