@@ -1,42 +1,173 @@
-<!doctype html>
-<html class="no-js" lang="">
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Extreme Gaming Events (Glasgow 2022)</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
-
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
-
-  <meta name="theme-color" content="#fafafa">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us & Book Your Gaming Event</title>
+    <style>
+        /* Add your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('img/gaming_background.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            background-color: #6a6969;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: center;
+        }
+        
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        
+        nav a:hover {
+            text-decoration: underline;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        
+        input[type="text"],
+        input[type="email"],
+        input[type="date"],
+        input[type="age"],
+        input[type="number"],
+        input[type="emergency_phone"],
+        input[type="platform"],
+        input[type="phone"],
+        input[type="tshirt_size"],
+        input[type="gamertag"],
+        input[type="emergency_contact"],
+        input[type="time"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
-
 <body>
-<!-- Add your site or application content here -->
-<!-- Add naw container -->
-<header>
-  <nav class="navbar">
-    <div class="menu">
-      <div class="menu__item"><a href="index.html">Home</a></div>
-      <div class="menu__item"><a href="events.html">Events</a></div>
-      <div class="menu__item"><a href="about.html">About</a></div>
-      <div class="menu__item"><a href="contact.html">Contact</a></div>
-      <div class="menu__item"><a href="booking.html">Booking</a></div>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="events.html">Events</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Contact Us & Book Your Gaming Event</h1>
+        <form action="submit_booking.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age">
+      
+            <label for="gamertag">Gamertag/Username:</label>
+            <input type="text" id="gamertag" name="gamertag">
+      
+
+      
+            <label for="emergency_contact">Emergency Contact:</label>
+            <input type="text" id="emergency_contact" name="emergency_contact">
+      
+            <label for="emergency_phone">Emergency Contact Phone:</label>
+            <input type="tel" id="emergency_phone" name="emergency_phone">
+      
+            <label for="gaming_id">Gaming ID:</label>
+            <input type="text" id="gaming_id" name="gaming_id">
+                  
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="phone" name="phone" required>
+            
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+            
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time" required>
+
+
+            <label for="platform">Gaming Platform:</label>
+            <select id="platform" name="platform">
+            <option value="PC">PC</option>
+            <option value="PlayStation">PlayStation</option>
+            <option value="Xbox">Xbox</option>
+            </select>
+
+            <label for="tshirt_size">T-shirt Size:</label>
+            <select id="tshirt_size" name="tshirt_size">
+            <option value="S">Small</option>
+            <option value="M">Medium</option>
+            <option value="L">Large</option>
+            <option value="XL">Extra Large</option>
+            </select>
+
+            
+            <label for="event">Event Type:</label>
+            <select id="event" name="event" required>
+                <option value="tournament">Gaming Tournament</option>
+                <option value="lan-party">LAN Party</option>
+                <option value="game-launch">Game Launch Event</option>
+                <option value="other">Other</option>
+            </select>
+            
+            <button type="submit">Book Now</button>
+        </form>
     </div>
-  </nav>
-</header>
-<main>
-  <p>Hello world! no JS</p>
-</main>
-<footer>
-  <p>Footer</p>
-</footer>
+
+    <footer>
+        <p>&copy; 2024 Gaming Event. All rights reserved.</p>
+    </footer>
 </body>
-
 </html>
-

@@ -1,77 +1,80 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Extreme Gaming Events (Glasgow 2024)</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
-
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
-
-  <meta name="theme-color" content="#fafafa">
-
-
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        /* Add your CSS styles here */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: center;
+        }
+        
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        
+        nav a:hover {
+            text-decoration: underline;
+        }
+        body {
+            background-image: url('img/gaming_background.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+    </style>
 </head>
-<body class="contact-form-bg">
+<body>
+    <header>
+        <h1>Contact Us</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="events.html">Events</a>
+            <a href="booking.html">Booking</a>
+        </nav>
+    </header>
 
-<h2>Registration Form</h2>
+    <main>
+        <section>
+            <h2>Contact Form</h2>
+            <form action="submit_form.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </section>
 
-<form action="submit_registration.html" method="post">
-<label for="fullname">Full Name:</label>
-<input type="text" id="fullname" name="fullname">
+        <section>
+            <h2>Contact Information</h2>
+            <p>Email: example@example.com</p>
+            <p>Phone: +1234567890</p>
+            <p>Address: 123 Main Street, City, Country</p>
+            <p>Social Media: <a href="https://facebook.com">Facebook</a>, <a href="https://twitter.com">Twitter</a>, <a href="https://instagram.com">Instagram</a></p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2237.6305633479687!2d-4.321328423583367!3d55.886422781691905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x488845944b255e79%3A0x7c700b07e83071e3!2sGlasgow%20Clyde%20College%20-%20Anniesland%20Campus!5e0!3m2!1sen!2suk!4v1707315269600!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+    </main>
 
-<label for="email">Email:</label>
-<input type="email" id="email" name="email">
-
-<label for="age">Age:</label>
-<input type="number" id="age" name="age">
-
-<label for="gamertag">Gamertag/Username:</label>
-<input type="text" id="gamertag" name="gamertag">
-
-<label for="address">Address:</label>
-<input type="text" id="address" name="address">
-
-<label for="phone">Phone Number:</label>
-<input type="tel" id="phone" name="phone">
-
-<label for="platform">Gaming Platform:</label>
-<select id="platform" name="platform">
-  <option value="PC">PC</option>
-  <option value="PlayStation">PlayStation</option>
-  <option value="Xbox">Xbox</option>
-</select>
-
-<label for="emergency_contact">Emergency Contact:</label>
-<input type="text" id="emergency_contact" name="emergency_contact">
-
-<label for="emergency_phone">Emergency Contact Phone:</label>
-<input type="tel" id="emergency_phone" name="emergency_phone">
-
-<label for="tshirt_size">T-shirt Size:</label>
-<select id="tshirt_size" name="tshirt_size">
-  <option value="S">Small</option>
-  <option value="M">Medium</option>
-  <option value="L">Large</option>
-  <option value="XL">Extra Large</option>
-</select>
-
-<label for="gaming_id">Gaming ID:</label>
-<input type="text" id="gaming_id" name="gaming_id">
-
-<input type="submit" value="Register">
-</form>
-</main>
-<footer>
-  <p>Footer</p>
-</footer>
-
-
+    <footer>
+        <p>&copy; 2024 Gaming Event. All rights reserved.</p>
+    </footer>
 </body>
 </html>
