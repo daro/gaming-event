@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us & Book Your Gaming Event</title>
+    <link rel="stylesheet" href="css/main.css">
     <style>
         /* Add your CSS styles here */
         body {
             font-family: Arial, sans-serif;
-            background-image: url('img/gaming_background.jpg');
+            background-image: url('img/contact_bg.jpg');
             background-size: cover;
             background-repeat: no-repeat;
             background-attachment: fixed;
@@ -38,14 +39,7 @@
             text-decoration: underline;
         }
         
-        .container {
-            max-width: 800px;
-            margin: 50px auto;
-            padding: 20px;
-            background-color: rgba(255, 255, 255, 0.8);
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
+
         
         h1 {
             text-align: center;
@@ -105,66 +99,63 @@
 
     <div class="container">
         <h1>Contact Us & Book Your Gaming Event</h1>
-        <form action="submit_booking.php" method="POST">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="age">Age:</label>
-            <input type="number" id="age" name="age">
-      
-            <label for="gamertag">Gamertag/Username:</label>
-            <input type="text" id="gamertag" name="gamertag">
-      
+        <form action="submit_booking.php" method="POST" class="two-column-form">
+            <!-- First column -->
+            <div class="column">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age">
+                
+                <label for="gamertag">Gamertag/Username:</label>
+                <input type="text" id="gamertag" name="gamertag">
+                
+                <label for="emergency_contact">Emergency Contact:</label>
+                <input type="text" id="emergency_contact" name="emergency_contact">
+                
+                <label for="emergency_phone">Emergency Contact Phone:</label>
+                <input type="tel" id="emergency_phone" name="emergency_phone">
+            </div>
+            <!-- Second column -->
+            <div class="column">
+                <label for="gaming_id">Gaming ID:</label>
+                <input type="text" id="gaming_id" name="gaming_id">
+                
+                <label for="phone">Phone Number:</label>
+                <input type="text" id="phone" name="phone" required>
+                
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+                
+                <label for="time">Time:</label>
+                <input type="time" id="time" name="time" required>
+                
+                <label for="platform">Gaming Platform:</label>
+                <select id="platform" name="platform">
+                    <option value="PC">PC</option>
+                    <option value="PlayStation">PlayStation</option>
+                    <option value="Xbox">Xbox</option>
+                </select>
+                
+                <label for="tshirt_size">T-shirt Size:</label>
+                <select id="tshirt_size" name="tshirt_size">
+                    <option value="S">Small</option>
+                    <option value="M">Medium</option>
+                    <option value="L">Large</option>
+                    <option value="XL">Extra Large</option>
+                </select>
+                
 
-      
-            <label for="emergency_contact">Emergency Contact:</label>
-            <input type="text" id="emergency_contact" name="emergency_contact">
-      
-            <label for="emergency_phone">Emergency Contact Phone:</label>
-            <input type="tel" id="emergency_phone" name="emergency_phone">
-      
-            <label for="gaming_id">Gaming ID:</label>
-            <input type="text" id="gaming_id" name="gaming_id">
-                  
-            <label for="phone">Phone Number:</label>
-            <input type="text" id="phone" name="phone" required>
-            
-            <label for="date">Date:</label>
-            <input type="date" id="date" name="date" required>
-            
-            <label for="time">Time:</label>
-            <input type="time" id="time" name="time" required>
-
-
-            <label for="platform">Gaming Platform:</label>
-            <select id="platform" name="platform">
-            <option value="PC">PC</option>
-            <option value="PlayStation">PlayStation</option>
-            <option value="Xbox">Xbox</option>
-            </select>
-
-            <label for="tshirt_size">T-shirt Size:</label>
-            <select id="tshirt_size" name="tshirt_size">
-            <option value="S">Small</option>
-            <option value="M">Medium</option>
-            <option value="L">Large</option>
-            <option value="XL">Extra Large</option>
-            </select>
-
-            
-            <label for="event">Event Type:</label>
-            <select id="event" name="event" required>
-                <option value="tournament">Gaming Tournament</option>
-                <option value="lan-party">LAN Party</option>
-                <option value="game-launch">Game Launch Event</option>
-                <option value="other">Other</option>
-            </select>
+            </div>
             
             <button type="submit">Book Now</button>
         </form>
     </div>
+    
 
     <footer>
         <p>&copy; 2024 Gaming Event. All rights reserved.</p>

@@ -16,6 +16,8 @@ html {
   font-size: 1em;
   line-height: 1.4;
 }
+/* Adjust input width if necessary */
+
 
 /*
  * Remove text-shadow in selection highlight:
@@ -35,6 +37,17 @@ html {
 ::selection {
   background: #b3d4fc;
   text-shadow: none;
+}
+.two-column-form input {
+  width: calc(100% - 40px); /* Adjust padding */
+}
+
+.two-column-form select {
+  width: calc(100% - 4px); /* Adjust padding */
+}
+/* Adjust input width for time input */
+.two-column-form input[type="time"] {
+  width: calc(100% - 20px); /* Adjust padding */
 }
 
 /*
@@ -98,6 +111,31 @@ textarea {
 .hidden,
 [hidden] {
   display: none !important;
+}
+.two-column-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.column {
+  width: calc(40% - 20px); /* Adjust width */
+  margin-bottom: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.5); /* Adjust alpha value for transparency */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Adjust input width if necessary */
+.two-column-form input,
+.two-column-form select {
+    width: calc(100% - 20px); /* Adjust padding */
 }
 
 /*
@@ -357,19 +395,19 @@ footer {
   width: 100%;
   height: 150px;
 }
-
+/*
 .contact-form-bg{
   background-image: url('../img/gaming_background.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
-}
+}*/
 
 form {
-  max-width: 400px;
+  max-width: 800px;
   margin: 0 auto;
-  background-color: #fff;
+  background-color: rgba(0, 0, 0, 0.1);
   padding: 20px;
   border-radius: 8px;
 }
