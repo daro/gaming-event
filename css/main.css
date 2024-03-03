@@ -95,6 +95,16 @@ textarea {
  * Hide visually and from screen readers
  */
 
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+}
+
+
 .hidden,
 [hidden] {
   display: none !important;
