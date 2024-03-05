@@ -16,14 +16,17 @@ h1 {
 .two-column-form {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  max-width: 65%;
+  margin: auto;
 }
 .column {
-  min-width: 44%;
+  min-width: 48%;
   margin-bottom: 20px;
   text-align: left;
   text-shadow: 3px 0px black;
   text-rendering: geometricPrecision;
+  /* margin-right: -9px; */
 }
 
 .two-column-form select {
