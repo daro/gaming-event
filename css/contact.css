@@ -1,6 +1,6 @@
 
 body {
-  background-image: url('../img/contact_bg.jpg');
+  background-image: url('../img/aekb79pb.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -18,3 +18,45 @@ section {
   background-color: rgba(255, 255, 255, 0.8);
   padding-top: 50p;
 }
+
+
+ul {
+  padding-left: 40px;
+}
+
+li > a {
+  color : #ffffff;
+  text-decoration: none;
+}
+
+li > a:hover {
+  color : #F2F2F2;
+  text-decoration: Underline;
+
+}
+
+.with-blur {
+  backdrop-filter: blur(2px);
+}
+
+
+@media only screen and (max-width: 800px) {
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    max-width: 100%;
+    margin: auto;
+  }
+  ul {
+    padding-left: 10px;
+  }
+  .col-3 > .column {
+    width: 95%;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+
+}
+

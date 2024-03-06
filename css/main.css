@@ -95,27 +95,10 @@ textarea {
  * Hide visually and from screen readers
  */
 
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  background-color: #333;
-  color: #fff;
-}
-
-
 .hidden,
 [hidden] {
   display: none !important;
 }
-
-.container {
-    margin: 0 auto;
-    padding: 38px;
-    /* border-radius: 10px; */
-}
-
 
 /*
  * Hide only visually, but have it available for screen readers:
@@ -326,30 +309,12 @@ footer {
 }
 
 .container {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  padding: 20px;
-
-}
-
-.container__form {
-    margin: 50px auto;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.5); /* Adjust alpha value for transparency */
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.column {
-  width: 50%;
-  padding: 20px;
+  padding: 35px;
+  min-height: 80vh;
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   .container {
     flex-direction: column;
   }
@@ -416,7 +381,7 @@ input[type="submit"]:hover {
 }
 
 .game-card__image {
-  max-height: 200px;
+  max-height: 212px;
   border-top-left-radius: 10px;
 }
 
@@ -459,6 +424,7 @@ button:hover {
   background-color: #0056b3;
 }
 
+
 .two-column-form {
   display: flex;
   flex-wrap: wrap;
@@ -466,9 +432,28 @@ button:hover {
   max-width: 65%;
   margin: auto;
 }
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  max-width: 100%;
+  margin: auto;
+}
+
+
 .column {
-  max-width: 48%;
-  min-width: 48%;
+  width: 48%;
   margin-bottom: 20px;
   text-align: left;
 }
+
+
+.col-3 > .column {
+  width: 30%;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+
