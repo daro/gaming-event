@@ -10,46 +10,10 @@ body {
 
 h1 {
   text-align: center;
-  /* margin-bottom: 30px; */
 }
 
-.two-column-form {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  max-width: 65%;
-  margin: auto;
-}
-.column {
-  min-width: 48%;
-  margin-bottom: 20px;
-  text-align: left;
-  text-shadow: 3px 0px black;
-  text-rendering: geometricPrecision;
-  /* margin-right: -9px; */
-}
 
 .two-column-form select {
   padding: 16px;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="date"],
-input[type="age"],
-input[type="number"],
-input[type="emergency_phone"],
-input[type="platform"],
-input[type="phone"],
-input[type="tshirt_size"],
-input[type="gamertag"],
-input[type="emergency_contact"],
-input[type="time"],
-select {
-  width: 100%;
-  margin-bottom: 20px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  box-sizing: border-box;
-  padding-inline-start: 20px;
-}
