@@ -100,13 +100,6 @@ textarea {
   display: none !important;
 }
 
-.container {
-    margin: 0 auto;
-    padding: 38px;
-    /* border-radius: 10px; */
-}
-
-
 /*
  * Hide only visually, but have it available for screen readers:
  * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
@@ -252,12 +245,6 @@ body {
   max-width: 1920px;
 }
 
-header {
-    /* justify-content: right; */
-}
-
-header {}
-
 
 /* On hover, make the links change color */
 .navbar a:hover {
@@ -321,8 +308,13 @@ footer {
   backdrop-filter: blur(10px);
 }
 
+.container {
+  padding: 35px;
+  min-height: 80vh;
+}
 
-@media only screen and (max-width: 600px) {
+
+@media only screen and (max-width: 800px) {
   .container {
     flex-direction: column;
   }
@@ -432,6 +424,7 @@ button:hover {
   background-color: #0056b3;
 }
 
+
 .two-column-form {
   display: flex;
   flex-wrap: wrap;
@@ -439,9 +432,28 @@ button:hover {
   max-width: 65%;
   margin: auto;
 }
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  max-width: 100%;
+  margin: auto;
+}
+
+
 .column {
-  max-width: 48%;
-  min-width: 48%;
+  width: 48%;
   margin-bottom: 20px;
   text-align: left;
 }
+
+
+.col-3 > .column {
+  width: 30%;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+

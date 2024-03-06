@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battlefield</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden; /* Hide scroll bars */
+            font-family: Arial, sans-serif; /* Change font family */
+        }
+
+        header {
+            text-align: center;
+            padding: 20px 0;
+            background-color: rgba(0, 0, 0, 0.7); /* Add background shade */
+            color: white;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav {
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.7); /* Add background shade */
+            color: white;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: rgba(0, 0, 0, 0.7); /* Add background shade */
+            color: white;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        iframe {
+            width: 100%;
+            height: calc(100vh - 110px); /* Set the height to 100% of the viewport height minus header and footer heights */
+            border: none; /* Remove border */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Battlefield</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="games.html">Games</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <iframe src="https://www.youtube.com/embed/wJ_F525yHVY" allowfullscreen></iframe>
+
+    <footer>
+        <p>&copy; 2024 Game Selection. All rights reserved.</p>
+    </footer>
+</body>
+</html>

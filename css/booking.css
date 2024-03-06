@@ -3,7 +3,7 @@
    ========================================================================== */
 body {
 
-  background-image: url('../img/contact_bg.jpg');
+  background-image: url('../img/aekb79pb.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -14,5 +14,9 @@ h1 {
 
 .two-column-form select {
   padding: 16px;
+}
+
+.with-blur {
+  backdrop-filter: blur(2px);
 }
 
