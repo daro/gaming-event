@@ -22,3 +22,8 @@ h1 {
 form label {
   color: white; /* Change label text color to white */
 }
+/* Add this CSS to your booking.css file */
+.blur-form {
+  filter: blur(1px); /* Apply a blur effect */
+}
+
