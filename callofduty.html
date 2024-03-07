@@ -3,57 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/booking.css">
     <title>Call of Duty</title>
     <style>
-        body {
-            margin: 0;
-            padding: 0;
-            overflow: hidden; /* Hide scroll bars */
-            font-family: Arial, sans-serif; /* Change font family */
-        }
-
-        header {
-            text-align: center;
-            padding: 20px 0;
-            background-color: rgba(0, 0, 0, 0.7); /* Add background shade */
-            color: white;
-        }
-
-        header h1 {
-            margin: 0;
-        }
-
-        nav {
-            text-align: center;
-            background-color: rgba(0, 0, 0, 0.7); /* Add background shade */
-            color: white;
-            padding: 10px 0;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 10px;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        footer {
-            text-align: center;
-            padding: 20px 0;
-            background-color: rgba(0, 0, 0, 0.7); /* Add background shade */
-            color: white;
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-        }
-
-        footer p {
-            margin: 0;
-        }
-
         iframe {
             width: 100%;
             height: calc(100vh - 110px); /* Set the height to 100% of the viewport height minus header and footer heights */
@@ -63,20 +17,47 @@
 </head>
 <body>
     <header>
+        <nav class="navbar">
+            <div class="menu">
+              <div class="menu__item"><a href="index.html">
+                <span class="menu__item--text ">Home</span>
+              </a></div>
+              <div class="menu__item"><a href="games.html">
+                <span class="menu__item--text">Events</span>
+              </a></div>
+              <div class="menu__item"><a href="about.html">
+                <span class="menu__item--text">About</span>
+              </a></div>
+              <div class="menu__item"><a href="contact.html">
+                <span class="menu__item--text ">Contact</span>
+              </a></div>
+              <div class="menu__item"><a href="booking.html">
+                <span class="menu__item--text">Booking</span>
+              </a></div>
+            </div>
+          </nav>
         <h1>Welcome to Call of Duty</h1>
     </header>
-
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="games.html">Games</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-
     <iframe src="https://www.youtube.com/embed/m-I6EVRNTVo" allowfullscreen></iframe>
 
     <footer>
-        <p>&copy; 2024 Game Selection. All rights reserved.</p>
+        <h4>Check out our socials:</h4>
+        <a href="https://www.instagram.com/">
+            <img src="img/insta.png" alt="Instagram lofo" style="width:62px;height:62px;">
+          </a>
+          <a href="https://www.tiktok.com/explore">
+            <img src="img/Tiktok.png" alt="Tik Tik logo" style="width:62px;height:62px;">
+          </a>
+          <a href="https://en-gb.facebook.com/">
+            <img src="img/FB.png" alt="Facebook logo" style="width:62px;height:62px;">
+          </a>
+          <a href="https://twitter.com/?lang=en-gb">
+            <img src="img/X-Logo.png" alt="X logo" style="width:32px;height:32px;">
+          </a>
+          <a href="https://www.youtube.com/">
+            <img src="img/Youtube.png" alt="Youtube logo" style="width:62px;height:62px;">
+          </a>
+          <p>All Content &copy; Extreme Gaming Events 2024</p>
     </footer>
 </body>
 </html>
