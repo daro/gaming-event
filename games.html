@@ -1,55 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="no-js" lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us & Book Your Gaming Event</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/booking.css">
     <title>Game Selection</title>
     <style>
-        body {
-            position: relative;
-            background-image: url('img/aekb79pb.jpg');
-            background-repeat: no-repeat;
-            background-size: cover;
-            padding: 20px; /* Add padding to the body to separate the columns from the edges */
-            margin: 0; /* Remove default margin */
-            font-family: 'Impact', sans-serif; /* Use Impact font */
-            filter: brightness(150%); /* Adjust the brightness (150% brighter in this example) */
-        }
-
-        header {
-            text-align: center;
-            padding: 20px 0;
-            background-color: rgba(0, 0, 0, 0.7);
-            color: rgb(86, 69, 69);
-            text-shadow: 5px 5px 35px rgba(255, 0, 0, 0.7);
-        }
-
-        header h1 {
-            font-family: Arial, sans-serif; /* Change font family */
-            margin: 0; /* Remove default margin */
-            text-shadow: 5px 5px 35px rgba(255, 0, 0, 0.7);
-        }
-
-        nav {
-            text-align: center;
-            background-color: rgba(0, 0, 0, 0.7);
-            color: rgb(139, 9, 9);
-            padding: 10px 0;
-            font-family: Arial, sans-serif; /* Change font family */
-   
-        }
-
-        nav a {
-            color: rgb(138, 7, 7);
-            text-decoration: none;
-            margin: 0 10px;
-            text-shadow: 5px 5px 35px rgba(255, 0, 0, 0.7);
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
         .welcome-message {
             text-align: center;
             color: white;
@@ -111,6 +70,11 @@
             opacity: 0; /* Initially hidden */
             animation: fadeIn 2s ease-in-out forwards; /* Animation */
             text-shadow: 5px 5px 35px rgba(255, 0, 0, 0.7);
+
+            padding: 20px; /* Add padding to the body to separate the columns from the edges */
+            margin: 0; /* Remove default margin */
+            font-family: 'Impact', sans-serif; /* Use Impact font */
+            filter: brightness(150%); /* Adjust the brightness (150% brighter in this example) */
         }
 
         @keyframes fadeIn {
@@ -123,17 +87,28 @@
         }
     </style>
 </head>
-<body>
+<body class="with-blur">
     <header>
-        <h1>Welcome to Glasgow Gaming Event</h1>
+        <nav class="navbar">
+            <div class="menu">
+              <div class="menu__item"><a href="index.html">
+                <span class="menu__item--text">Home</span>
+              </a></div>
+              <div class="menu__item"><a href="games.html">
+                <span class="menu__item--text">Events</span>
+              </a></div>
+              <div class="menu__item"><a href="about.html">
+                <span class="menu__item--text">About</span>
+              </a></div>
+              <div class="menu__item"><a href="contact.html">
+                <span class="menu__item--text">Contact</span>
+              </a></div>
+              <div class="menu__item"><a href="booking.html">
+                <span class="menu__item--text active">Booking</span>
+              </a></div>
+            </div>
+          </nav>
     </header>
-
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-        <a href="booking.html">Booking</a>
-    </nav>
 
     <div class="background-text">Glasgow gaming event</div>
     <div class="container">
@@ -155,7 +130,23 @@
     </div>
 
     <footer>
-        <p>&copy; 2024 Game Selection. All rights reserved.</p>
+        <h4>Check out our socials:</h4>
+        <a href="https://www.instagram.com/">
+            <img src="img/insta.png" alt="Instagram lofo" style="width:62px;height:62px;">
+          </a>
+          <a href="https://www.tiktok.com/explore">
+            <img src="img/Tiktok.png" alt="Tik Tik logo" style="width:62px;height:62px;">
+          </a>
+          <a href="https://en-gb.facebook.com/">
+            <img src="img/FB.png" alt="Facebook logo" style="width:62px;height:62px;">
+          </a>
+          <a href="https://twitter.com/?lang=en-gb">
+            <img src="img/X-Logo.png" alt="X logo" style="width:32px;height:32px;">
+          </a>
+          <a href="https://www.youtube.com/">
+            <img src="img/Youtube.png" alt="Youtube logo" style="width:62px;height:62px;">
+          </a>
+          <p>All Content &copy; Extreme Gaming Events 2024</p>
     </footer>
 </body>
 </html>

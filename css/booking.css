@@ -17,6 +17,6 @@ h1 {
 }
 
 .with-blur {
-  backdrop-filter: blur(2px);
+  /* backdrop-filter: blur(2px); */
 }
 
