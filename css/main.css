@@ -245,6 +245,12 @@ body {
   max-width: 1920px;
 }
 
+header {
+    /* justify-content: right; */
+}
+
+header {}
+
 
 /* On hover, make the links change color */
 .navbar a:hover {
@@ -351,7 +357,6 @@ footer {
 label {
   display: block;
   margin-bottom: 4px;
-  color: #333;
 }
 
 input[type="text"],
@@ -428,7 +433,6 @@ button:hover {
   background-color: #0056b3;
 }
 
-
 .two-column-form {
   display: flex;
   flex-wrap: wrap;
@@ -456,8 +460,15 @@ button:hover {
 
 .col-3 > .column {
   width: 30%;
+  width: 48%;
   margin-bottom: 20px;
   text-align: left;
+}
+
+
+.col-3 > .column {
+  width: 30%;
+  margin-bottom: 20px;
 }
 
 

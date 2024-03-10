@@ -39,6 +39,9 @@ li > a:hover {
   backdrop-filter: blur(2px);
 }
 
+.col2 {
+  text-align: center;
+}
 
 @media only screen and (max-width: 800px) {
   .row {
@@ -55,7 +58,6 @@ li > a:hover {
   .col-3 > .column {
     width: 95%;
     margin-bottom: 20px;
-    text-align: left;
   }
 
 }
