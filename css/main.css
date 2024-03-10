@@ -188,7 +188,7 @@ textarea {
 
 .navbar {
  display: flex;
- justify-content: right;
+ justify-content: space-between;
  flex-direction: row;
  background-color: #333;
 }
