@@ -2,15 +2,18 @@
 body {
   background-image: url('../img/aekb79pb.jpg');
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat;;
 }
 
 main {
-  /* display: flex; */
-  /* justify-content: space-between; */
+  /* margin-top: 0px; */
+  display: flex;
+  justify-content: space-between;
   /* flex-wrap: wrap; */
   /* align-content: space-between; */
   padding: 50px;
+  padding-top: 160px;
+  /* top: 50px; */
 }
 
 section {

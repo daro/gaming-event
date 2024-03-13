@@ -30,6 +30,8 @@ body {
 
 main {
   display: block;
+  /* height: 61%; */
+  padding-top: 85px;
 }
 
 /**
