@@ -2,107 +2,174 @@
 <html class="no-js" lang="">
 
 <head>
-  <meta charset="utf-8">
-  <title>Extreme Gaming Events (Glasgow 2022)</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>Extreme Gaming Events (Glasgow 2022)</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
 
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
 
-  <meta name="theme-color" content="#fafafa">
+    <meta name="theme-color" content="#fafafa">
+    <script>
+        window.addEventListener('scroll', function () {
+            const header = document.querySelector('.home-background');
+            if (window.pageYOffset < 600) {
+                header.style.opacity = 1 - +window.pageYOffset / 1000 + '';
+                header.style.filter = 'blur( ' + -1 + window.pageYOffset / 100 + 'px)';
+            }
+            console.log(window.pageYOffset);
+        });
+    </script>
 </head>
 
 <body>
-<div class="full-bg home">
-  <header>
+
+<header>
     <nav class="navbar with-blur">
-      <div class="menu">
-        <div class="menu__item"><a href="index.html">
-          <span class="menu__item--text active">Home</span>
-        </a></div>
-        <div class="menu__item"><a href="events.html">
-          <span class="menu__item--text">Events</span>
-        </a></div>
-        <div class="menu__item"><a href="about.html">
-          <span class="menu__item--text">About</span>
-        </a></div>
-        <div class="menu__item"><a href="contact.html">
-          <span class="menu__item--text">Contact</span>
-        </a></div>
-        <div class="menu__item"><a href="booking.html">
-          <span class="menu__item--text">Booking</span>
-        </a></div>
-      </div>
+        <img src="img/Logo.png" alt="Xtreme Gaming 2022 Logo" style="width:150px;height:100px;">
+        <div class="menu">
+            <div class="menu__item"><a href="index.html">
+                <span class="menu__item--text active">Home</span>
+            </a></div>
+            <div class="menu__item"><a href="events.html">
+                <span class="menu__item--text">Events</span>
+            </a></div>
+            <div class="menu__item"><a href="about.html">
+                <span class="menu__item--text">About</span>
+            </a></div>
+            <div class="menu__item"><a href="contact.html">
+                <span class="menu__item--text">Contact</span>
+            </a></div>
+            <div class="menu__item"><a href="booking.html">
+                <span class="menu__item--text">Booking</span>
+            </a></div>
+        </div>
     </nav>
-  </header>
-  <main class="container with-blur">
+</header>
+<main class="">
+    <div class="home-background"></div>
 
-    <div class="column">
-      <img src="img/Logo.png" alt="Xtreme Gaming 2022 Logo" style="width:150px;height:100px;">
-      <h1>Welcome to Xtreme Gaming 2022 - Unleash the Gamer Within!</h1>      
-      <p>Embark on a gaming journey like never before as we bring you Xtreme Gaming 2022,
-         hosted within the iconic SEC Centre in Glasgow. Get ready for a weekend of unparalleled gaming excitement,
-          where strategic prowess and skill take center stage. For any inquiries or to connect with Mr. Brown, our SEC Bookings Organiser.</p>
-    </div>
-    <h2>What to expect</h2>
-    <div class="column">
-      <div class="game-card">
-        <img src="img/1.jpg" alt="Gaming event">
-        <h3>Event Details:</h3>
-        <p>Dates: Saturday, 5th March, and Sunday, 6th March 2022</p>
-        <p>Running Hours: 10 am - 4 pm</p>
-        <p>Competitive Gaming Events: Immerse yourself in three thrilling competitive gaming events (details below).</p>
-      </div>
-      <h2>🎮 Competitive Gaming Events:</h2>
-      <div class="game-card">
-        <img class="game-card__background-cod" src="img/MW3/asset-1.png" alt="Gaming event">
-        <img src="img/MW3/logo.png" alt="Call of Duty Modern warefare 3 logo" style="width:150px;height:100px;"><h3>Call of Duty: Modern Warfare III Tournament</h3> 
-        <p>Battle it out in our intense 3v3 warfare. </p>
-      </div>
-      <div class="game-card">
-        <img class="game-card__image" src="/img/RocketLeague/logo-rocket-league.png" alt="Gaming event Rrocket League">
-        <img src="img/RocketLeague/Logo.png" alt="Rocket League logo" style="width:55px;height:65px;"><h3>Rocket League Championship:</h3>
-        <p>Take your gaming skills airborne in the dynamic 3v3 Rocket League showdown.</p>
-      </div>
-      <div class="game-card">
-        <img class="game-card__image" src="/img/RocketLeague/logo-rocket-league.png" alt="Gaming event Rrocket League">
-        <img src="img/Fortnite/Llama.png" alt="Fortnie llama 3 logo" style="width:100px;height:100px;"><h3>Fortnite Battle Showdown</h3>
-        <p>Survive and conquer in the ultimate Fortnite 3v3 Battle Royale spectacle.</p>
-      </div>
-      <div class="game-card">
-        <img class="game-card__image" src="/img/RocketLeague/logo-rocket-league.png" alt="Gaming event Rrocket League">
-        <h3>Partners and Affiliates:</h3>
-        <p>Xtreme Gaming 2022 proudly collaborates with industry-leading agencies and partners. Explore our network of affiliates</p>
-        <img src="img/sponsor-1.png" alt="Microhard logo" style="width:100px;height:100px;"><img src="img/sponsor-2.png" alt="AND logo" style="width:100px;height:100px;"><img src="img/sponsor-3.png" alt="Closed AI logo" style="width:100px;height:100px;">
-      </div>
-    </div>
+    <section class="panel">
+        <div class="panel-inner">
+            <h1>Welcome to Xtreme Gaming 2022 </h1>
+            <h1>Unleash the Gamer Within!</h1>
+            <p>Embark on a gaming journey like never before as we bring you Xtreme Gaming 2022,
+                hosted within the iconic SEC Centre in Glasgow. Get ready for a weekend of unparalleled gaming
+                excitement, where strategic prowess and skill take center stage. For any inquiries or to connect with
+                Mr. Brown,
+                our SEC Bookings Organiser.</p>
+            <img class="home-img" src="img/Logo.png" alt="Xtreme Gaming 2022 Logo" >
+        </div>
+    </section>
+    <section class="panel panel-sponsors">
+        <div class="panel-inner">
+            <h3>Event Details:</h3>
+            <p>Dates: Saturday, 5th March, and Sunday, 6th March 2022</p>
+            <p>Running Hours: 10 am - 4 pm</p>
+            <p>Competitive Gaming Events: Immerse yourself in three thrilling competitive gaming events.</p>
+        </div>
+    </section>
+    <section class="panel mw3-panel">
+        <div class="panel-inner overlay_4 ">
+            <img src="img/MW3/logo.png" alt="Call of Duty Modern warefare 3 logo" style="width:150px;height:100px;">
+            <h3>Why should you participate?</h3>
+            <h3>It's simple!</h3>
+            <h4>Community:</h4>
+            <p>Join the growing community of e-sports players who are passionate about MW3 Multiplayer. Meet new friends
+                and
+                compete with the best.</p>
+            <h4>Skill Development:</h4>
+            <p>E-sports competitions are an excellent opportunity for improvement. Through competing with other players,
+                you'll have the chance to learn new strategies and techniques that will enhance your skills in the
+                game.</p>
+            <h4>Rewards:</h4>
+            <p> We have prepared attractive rewards for the winners. Exclusive in-game items await you, along with
+                the
+                chance to gain fame in the e-sports world.</p>
+            <h4>Adrenaline:</h4>
+            <p>Nothing pumps adrenaline like competing in e-sports. Feel the thrill of the competition as you fight for
+                victory in dynamic clashes with opponents.</p>
+        </div>
+    </section>
+    <section class="panel panel-sponsors">
 
-  </main>
+        <h3>Partners and Affiliates</h3>
+        <div class="panel-sponsors-img">
+            <img src="img/sponsor-1.png" alt="Microhard logo">
+            <img src="img/sponsor-2.png" alt="AND logo">
+            <img src="img/sponsor-3.png" alt="Closed AI logo">
+        </div>
+        <p>Xtreme Gaming 2022 proudly collaborates with industry-leading agencies and partners. Explore our network
+            of affiliates</p>
+    </section>
+    <section class="panel rl-panel">
+        <div class="panel-inner overlay_4">
+            <img src="img/RocketLeague/Logo.png" alt="Rocket League logo" style="width:55px;height:65px;">
+            <h3>Why should you participate? </h3>
+            <h3>It's simple!</h3>
+            <p>Take your gaming skills airborne in the dynamic 3v3 Rocket League showdown.</p>
 
-  <footer>
+            <h4>Community:</h4>
+            <p>Join the ever-growing community of Rocket League Championship players. Connect with like-minded
+                individuals,
+                make new friends, and compete alongside the best.</p>
+
+            <h4>Skill Development:</h4>
+            <p> The Rocket League Championship provides a perfect platform for skill enhancement. Competing against
+                other
+                players will expose you to new strategies and techniques, ultimately improving your gameplay.</p>
+
+            <h4>Rewards:</h4>
+            <p> Exciting rewards await the champions. Exclusive in-game items and the opportunity to earn recognition
+                within
+                the Rocket League community are up for grabs.</p>
+
+            <h4>Adrenaline:</h4>
+            <p> Experience the rush of adrenaline that comes with competitive gaming. Feel the intensity as you battle
+                for
+                victory in thrilling matches against formidable opponents.</p>
+        </div>
+
+    </section>
+    <section class="panel">
+        <div class="panel-inner">
+
+            <img class="game-card__image" src="/img/RocketLeague/logo-rocket-league.png"
+                 alt="Gaming event Rrocket League">
+            <img class="game-card__image" src="/img/RocketLeague/logo-rocket-league.png"
+                 alt="Gaming event Rrocket League">
+            <img src="img/Fortnite/Llama.png" alt="Fortnie llama 3 logo" style="width:100px;height:100px;">
+            <h3>Fortnite Battle Showdown</h3>
+            <p>Survive and conquer in the ultimate Fortnite 3v3 Battle Royale spectacle.</p>
+        </div>
+    </section>
+
+
+</main>
+
+<footer>
     <h4>Check out our socials:</h4>
     <a href="https://www.instagram.com/">
         <img src="img/insta.png" alt="Instagram lofo" style="width:100px;height:100px;">
-      </a>
-      <a href="https://www.tiktok.com/explore">
+    </a>
+    <a href="https://www.tiktok.com/explore">
         <img src="img/Tiktok.png" alt="Tik Tik logo" style="width:150px;height:100px;">
-      </a>
-      <a href="https://en-gb.facebook.com/">
+    </a>
+    <a href="https://en-gb.facebook.com/">
         <img src="img/FB.png" alt="Facebook logo" style="width:150px;height:130px;">
-      </a>
-      <a href="https://twitter.com/?lang=en-gb">
+    </a>
+    <a href="https://twitter.com/?lang=en-gb">
         <img src="img/X-Logo.png" alt="X logo" style="width:90x;height:75px;">
-      </a>
-      <a href="https://www.youtube.com/">
+    </a>
+    <a href="https://www.youtube.com/">
         <img src="img/Youtube.png" alt="Youtube logo" style="width:150px;height:100px;">
-      </a>
-      <p>All Content &copy; Xtreme Gaming Events 2022</p>
+    </a>
+    <p>All Content &copy; Xtreme Gaming Events 2022</p>
 </footer>
-</div>
 </body>
 
 </html>
