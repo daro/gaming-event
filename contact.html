@@ -1,81 +1,111 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">
-    <title>Contact Us</title>
-    <style>
+<!doctype html>
+<html class="no-js" lang="">
 
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 0;
-            text-align: center;
-        }
-        
-        nav {
-            display: flex;
-            justify-content: center;
-        }
-        
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 10px;
-        }
-        
-        nav a:hover {
-            text-decoration: underline;
-        }
-        body {
-            background-image: url('img/contact_bg.jpg');
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-        }
-    </style>
+<head>
+    <meta charset="utf-8">
+    <title>Extreme Gaming Events (Glasgow 2022)</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/contact.css">
+
+
 </head>
 <body>
-    <header>
-        <h1>Contact Us</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="events.html">Events</a>
-            <a href="booking.html">Booking</a>
-        </nav>
-    </header>
-
-    <main>
-        <section>
+<!-- Add your site or application content here -->
+<!-- Add naw container -->
+<header>
+    <nav class="navbar">
+        <img src="img/Logo.png" alt="Xtreme Gaming 2022 Logo" style="width:150px;height:100px;">
+        <div class="menu">
+            <div class="menu__item"><a href="index.html">
+                <span class="menu__item--text ">Home</span>
+            </a></div>
+            <div class="menu__item"><a href="events.html">
+                <span class="menu__item--text">Events</span>
+            </a></div>
+            <div class="menu__item"><a href="about.html">
+                <span class="menu__item--text">About</span>
+            </a></div>
+            <div class="menu__item"><a href="contact.html">
+                <span class="menu__item--text active">Contact</span>
+            </a></div>
+            <div class="menu__item"><a href="booking.html">
+                <span class="menu__item--text">Booking</span>
+            </a></div>
+        </div>
+    </nav>
+</header>
+<main class="with-blur">
+    <div class="row col-3">
+        <div class="column">
+            <h1>Contact Us</h1>
+            <p>Have a question or need to get in touch? We're here to help. Fill out the form below and we'll get back
+                to you
+                as
+                soon as possible.</p>
             <h2>Contact Form</h2>
             <form action="submit_form.php" method="POST">
                 <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required><br><br>
-                
+                <input type="text" id="name" name="name" required>
+
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required><br><br>
-                
-                <label for="message">Message:</label><br>
-                <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
-                
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" cols="50" required></textarea>
+
                 <button type="submit">Submit</button>
             </form>
-        </section>
+        </div>
 
-        <section>
+        <div class="column col2">
             <h2>Contact Information</h2>
             <p>Email: Glasgow_Event@MyClyde.ac.uk</p>
             <p>Phone: 01412729000</p>
             <p>Address: 19 Hatfield Dr, Glasgow G12 0YE</p>
-            <p>Social Media: <a href="https://facebook.com">Facebook</a>, <a href="https://twitter.com">Twitter</a>, <a href="https://instagram.com">Instagram</a></p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2237.6305633479687!2d-4.321328423583367!3d55.886422781691905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x488845944b255e79%3A0x7c700b07e83071e3!2sGlasgow%20Clyde%20College%20-%20Anniesland%20Campus!5e0!3m2!1sen!2suk!4v1707315269600!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </section>
-    </main>
+            <p>Social Media: </p>
+            <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Instagram</a></li>
+            </ul>
+        </div>
 
-    <footer>
-        <p>&copy; 2024 Gaming Event. All rights reserved.</p>
-    </footer>
+        <div class="column location">
+            <h2>Location</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2237.6305633479687!2d-4.321328423583367!3d55.886422781691905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x488845944b255e79%3A0x7c700b07e83071e3!2sGlasgow%20Clyde%20College%20-%20Anniesland%20Campus!5e0!3m2!1sen!2suk!4v1707315269600!5m2!1sen!2suk"
+                    width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+    </div>
+</main>
+
+<footer>
+    <h4>Check out our socials:</h4>
+    <a href="#">
+        <img src="img/insta.png" alt="Instagram lofo"  style="width:100px;height:100px;">
+    </a>
+    <a href="#">
+        <img src="img/Tiktok.png" alt="Tik Tik logo"  style="width:100px;height:100px;">
+    </a>
+    <a href="#">
+        <img src="img/FB.png" alt="Facebook logo"  style="width:150px;height:100px;">
+    </a>
+    <a href="#">
+        <img src="img/X-Logo.png" alt="X logo"  style="width:150px;height:100px;">
+    </a>
+    <a href="#">
+        <img src="img/Youtube.png" alt="Youtube logo"  style="width:150px;height:100px;"">
+    </a>
+    <p>All Content &copy; Extreme Gaming Events 2024</p>
+</footer>
 </body>
+
 </html>

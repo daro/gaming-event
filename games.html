@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Selection</title>
+    <style>
+        body {
+            position: relative;
+            background-image: url('img/aekb79pb.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 20px; /* Add padding to the body to separate the columns from the edges */
+            margin: 0; /* Remove default margin */
+            font-family: 'Impact', sans-serif; /* Use Impact font */
+            filter: brightness(150%); /* Adjust the brightness (150% brighter in this example) */
+        }
+
+        header {
+            text-align: center;
+            padding: 20px 0;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: rgb(86, 69, 69);
+            text-shadow: 5px 5px 35px rgba(255, 0, 0, 0.7);
+        }
+
+        header h1 {
+            font-family: Arial, sans-serif; /* Change font family */
+            margin: 0; /* Remove default margin */
+            text-shadow: 5px 5px 35px rgba(255, 0, 0, 0.7);
+        }
+
+        nav {
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: rgb(139, 9, 9);
+            padding: 10px 0;
+            font-family: Arial, sans-serif; /* Change font family */
+   
+        }
+
+        nav a {
+            color: rgb(138, 7, 7);
+            text-decoration: none;
+            margin: 0 10px;
+            text-shadow: 5px 5px 35px rgba(255, 0, 0, 0.7);
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .welcome-message {
+            text-align: center;
+            color: white;
+            padding: 10px 0;
+            background-color: rgba(0, 0, 0, 0.7);
+            margin-bottom: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            font-family: Arial, sans-serif; /* Change font family */
+        }
+
+        .container {
+            position: relative;
+            z-index: 1; /* Ensure images are on top of the text */
+            display: flex; /* Use flexbox for layout */
+            justify-content: space-around; /* Align columns horizontally */
+        }
+
+        .column {
+            flex: 1; /* Each column takes equal width */
+            padding: 10px;
+            box-sizing: border-box;
+            text-align: center; /* Center align content */
+        }
+
+        .column img {
+            width: 100%; /* Make images fill their parent container */
+            height: auto;
+            display: block;
+            margin: 0 auto; /* Center images horizontally */
+            cursor: pointer;
+            opacity: 0.2; /* Set opacity to 50% (change as needed) */
+        }
+
+        .column img:hover {
+            opacity: 1; /* Increase opacity to 100% on hover */
+        }
+
+        .background-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 0; /* Ensure text is behind the images */
+            color: #070707; /* Gray color */
+            font-size: 10vw; /* Large font size based on viewport width */
+            white-space: nowrap; /* Prevent text from wrapping */
+            opacity: 0; /* Initially hidden */
+            animation: fadeIn 2s ease-in-out forwards; /* Animation */
+            text-shadow: 5px 5px 35px rgba(255, 0, 0, 0.7);
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0; /* Start opacity */
+            }
+            100% {
+                opacity: 1; /* End opacity */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Glasgow Gaming Event</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="booking.html">Booking</a>
+    </nav>
+
+    <div class="background-text">Glasgow gaming event</div>
+    <div class="container">
+        <div class="column">
+            <a href="callofduty.html">
+                <img src="img/Callofduty.jpg" alt="Call of Duty">
+            </a>
+        </div>
+        <div class="column">
+            <a href="fortnite.html">
+                <img src="img/Fortnite.jpg" alt="Fortnite">
+            </a>
+        </div>
+        <div class="column">
+            <a href="battlefield.html">
+                <img src="img/BattleField.jpg" alt="Battlefield">
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <h4>Check out our socials:</h4>
+        <a href="https://www.instagram.com/">
+            <img src="img/insta.png" alt="Instagram lofo" style="width:100px;height:100px;">
+          </a>
+          <a href="https://www.tiktok.com/explore">
+            <img src="img/Tiktok.png" alt="Tik Tik logo" style="width:150px;height:100px;">
+          </a>
+          <a href="https://en-gb.facebook.com/">
+            <img src="img/FB.png" alt="Facebook logo" style="width:150px;height:130px;">
+          </a>
+          <a href="https://twitter.com/?lang=en-gb">
+            <img src="img/X-Logo.png" alt="X logo" style="width:90x;height:75px;">
+          </a>
+          <a href="https://www.youtube.com/">
+            <img src="img/Youtube.png" alt="Youtube logo" style="width:150px;height:100px;">
+          </a>
+          <p>All Content &copy; Xtreme Gaming Events 2022</p>
+    </footer>
+</body>
+</html>

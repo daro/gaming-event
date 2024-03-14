@@ -1,0 +1,22 @@
+/* ==========================================================================
+   Styles: Booking Page (modifications to the default styles)
+   ========================================================================== */
+body {
+
+  background-image: url('../img/aekb79pb.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  text-align: center;
+}
+
+.two-column-form select {
+  padding: 16px;
+}
+
+.with-blur {
+  backdrop-filter: blur(2px);
+}
+
