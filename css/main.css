@@ -609,3 +609,17 @@ section >.home-background {
     width: 500px;
     height: 345px;
 }
+
+.fortnite-panel {
+    background-image: url("../img/Fortnite/Battle-bus.jpg");
+    /* filter: opacity(0.1); */
+    background-position-y: 35%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    firter: revert-layer;
+    /* color: yellow; */
+    /* font-size: 29px; */
+    /* text-shadow: 6px 6px 8px #db2c2c; */
+    /* filter: grayscale(50%); */
+    backdrop-filter: grayscale(85%) brightness(0.5);
+}
